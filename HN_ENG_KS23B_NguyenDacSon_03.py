@@ -13,8 +13,8 @@ def in_menu():
     print("4. Xoá phòng")
     print("5. Tìm kiếm phòng")
     print("6. Sắp xếp danh sách phòng")
-    print("7. Thống kê doanh thu")
-    print("8. Vẽ biểu đồ thống kê điểm TB")
+    print("7. Thống kê phân hạng")
+    print("8. Vẽ biểu đồ thống kê")
     print("9. Lưu vào file CSV")
     print("0. Thoát")
 
@@ -120,7 +120,7 @@ def them_don_dat_phong():
 
     hotels.append(don_moi)
 
-    print("Thêm dơn đặt phòng thành công!")
+    print("Thêm đơn đặt phòng thành công!")
 
 
 def cap_nhat_don():
@@ -305,12 +305,12 @@ def luu_du_lieu():
 
 while True:
     in_menu()
+    lay_du_lieu()
     choice = int(input("Chọn chức năng: "))
     if choice == 0:
         print("Tạm biệt!")
         break
     elif choice == 1:
-        lay_du_lieu()
         in_danh_sach_don()
     elif choice == 2:
         them_don_dat_phong()
