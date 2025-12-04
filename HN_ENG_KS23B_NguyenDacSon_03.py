@@ -274,10 +274,8 @@ def bieu_do_thong_ke():
         print("Không có dữ liệu để vẽ biểu đồ!")
         return
     
-    plt.bar(labels, values, color=['green', 'blue', 'red'])
+    plt.pie(values, labels=labels, autopct="%1.1f%%")
     plt.title("Thống kê số lượng đơn theo phân hạng")
-    plt.xlabel("Phân hạng")
-    plt.ylabel("Số lượng")
     plt.show()
 
 
